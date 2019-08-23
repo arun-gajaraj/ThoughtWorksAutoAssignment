@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="hubHost" value="local"></parameter>
+
+
+	<parameter name="browserName" value="chrome"></parameter>
+	<parameter name="website"
+		value="http://food-calorie-planner.herokuapp.com"></parameter>
+
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.scratchframework.testscripts.FoodLookupTests" >
+
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
